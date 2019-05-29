@@ -1,0 +1,7 @@
+<%= form_tag("validate-pin", method: "get") do %>
+  <%= number_field(:one, nil, in: 0..9, step: 1) %>
+  <%= number_field(:two, nil, in: 0..9, step: 1) %>
+  <%= number_field(:thr, nil, in: 0..9, step: 1) %>
+  <%= number_field(:fou, nil, in: 0..9, step: 1) %>
+  <%= submit_tag("Submit") %>
+<% end %>

@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <td>Hello NAME</td>
+  </tr>
+  <tr>
+    <td>Balance: BALANCE</td>
+  </tr>
+  <tr>
+    <td>
+      <%= form_tag("session/top-up", method: "get") do %>
+        <%= label_tag(:top_up_amount, "Top Up") %>
+        <%= number_field(:top_up_amount, nil, in: 0.01..100, step: 0.01) %>
+        <%= submit_tag("Submit") %>
+      <% end %>
+    </td>
+  </tr>
+
+</table>
