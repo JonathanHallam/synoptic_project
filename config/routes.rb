@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/user/validate-pin' => 'user#validate_pin'
   get '/user/register' => 'user#register'
   get '/user/register-details' => 'user#register_details'
+	get '/user/incorrect-pin' => 'user#incorrect_pin'
 
   get '/session' => 'session#home'
   get '/session/top-up' => 'session#top_up'

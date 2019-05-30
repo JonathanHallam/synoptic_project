@@ -1,0 +1,21 @@
+html body {
+    height: 100%;
+    margin: 0px;
+}
+
+.wrapper {
+  height:  -webkit-fill-available;
+  background-color: cyan;
+  padding-top: 20%;
+  text-align: center;
+  overflow-y: hidden;
+  position: relative;
+}
+
+form {
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}

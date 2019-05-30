@@ -1,4 +1,15 @@
- <%= form_tag("user", method: "get") do %>
-  <%= number_field(:card_number, nil, in: 100000..999999, step: 1) %>
-  <%= submit_tag("Submit") %>
-<% end %>
+<head>
+  <link type="text/css" rel="stylesheet" href="/assets/stylesheets/main.scss"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <%= form_tag("user", method: "get") do %>
+      <%= label_tag(:card_number, "Card Number") %>
+      <br />
+      <%= number_field(:card_number, nil, in: 100000..999999, step: 1) %>
+      <br />
+      <%= submit_tag("Submit") %>
+    <% end %>
+  </div>
+</body>

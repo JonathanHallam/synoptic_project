@@ -1,15 +1,17 @@
-<%= form_tag("register-details", method: "get") do %>
-  <%= label_tag(:firstname, "First Name") %>
-  <%= text_field_tag(:firstname) %>
-  <%= label_tag(:surname, "Surame") %>
-  <%= text_field_tag(:surname) %>
-  <%= label_tag(:email, "Email") %>
-  <%= email_field_tag(:email) %>
-  <%= label_tag(:phone_number, "Mobile Number") %>
-  <%= phone_field_tag(:phone_number) %>
-  <%= label_tag(:pin, "Pin") %>
-  <%= number_field(:pin, nil, in: 1000..9999, step: 1) %>
-  <%= label_tag(:confirm_pin, "Confirm Pin") %>
-  <%= number_field(:confirm_pin, nil, in: 1000..9999, step: 1) %>
-  <%= submit_tag("Submit") %>
-<% end %>
+<div class="wrapper">
+  <%= form_tag("register-details", method: "get") do %>
+    <%= label_tag(:firstname, "First Name") %>
+    <%= text_field_tag(:firstname) %>
+    <%= label_tag(:surname, "Surame") %>
+    <%= text_field_tag(:surname) %>
+    <%= label_tag(:email, "Email") %>
+    <%= email_field_tag(:email) %>
+    <%= label_tag(:phone_number, "Mobile Number") %>
+    <%= phone_field_tag(:phone_number) %>
+    <%= label_tag(:pin, "Pin") %>
+    <%= number_field(:pin, nil, in: 1000..9999, step: 1) %>
+    <%= label_tag(:confirm_pin, "Confirm Pin") %>
+    <%= number_field(:confirm_pin, nil, in: 1000..9999, step: 1) %>
+    <%= submit_tag("Submit") %>
+  <% end %>
+</div>

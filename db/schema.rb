@@ -20,11 +20,12 @@ ActiveRecord::Schema.define(version: 2019_05_28_131412) do
     t.string "firstname"
     t.string "surname"
     t.string "email"
-    t.integer "mobile_number"
+    t.bigint "mobile_number"
     t.bigint "card_number"
     t.decimal "balance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "pin"
   end
 
 end

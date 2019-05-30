@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer :mobile_number
       t.bigint :card_number
       t.decimal :balance
+      t.integer :pin
 
       t.timestamps
     end
