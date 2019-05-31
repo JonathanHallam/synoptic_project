@@ -1,4 +1,3 @@
-require 'pry'
 class UserController < ApplicationController
   def validate_card
     session["card_number"] = params["card_number"][0]

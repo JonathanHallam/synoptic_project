@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get '/session' => 'session#home'
   get '/session/top-up' => 'session#top_up'
+
+	get '/goodbye' => 'session#goodbye'
 end
